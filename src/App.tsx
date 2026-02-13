@@ -27,12 +27,17 @@ function App() {
       <div className="flex flex-col items-center gap-4">
         <h1 className="text-center my-4 text-2xl font-bold">User Management</h1>
         <DataFetch status="success" />
-        <Button bg="green" text="white">
+        <Button
+          buttonStyle={{
+            hoverBg: "hover:bg-green-600",
+            hoverText: "hover:text-white",
+            text: "text-green-600",
+            border: "border-green-600",
+          }}
+        >
           Hello World
         </Button>
-        <Button bg="blue" text="white">
-          Blue Button
-        </Button>
+        {/* <Button>Blue Button</Button> */}
         {/* <Users users={users} /> */}
         {/* <User user={user1} />
           <User user={user2} /> */}
