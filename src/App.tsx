@@ -1,5 +1,6 @@
 // import Users from "./Components/Users";
 
+import Button from "./Components/Button";
 import DataFetch from "./Components/DataFetch";
 
 function App() {
@@ -23,9 +24,15 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="flex flex-col items-center gap-4">
         <h1 className="text-center my-4 text-2xl font-bold">User Management</h1>
         <DataFetch status="success" />
+        <Button bg="green" text="white">
+          Hello World
+        </Button>
+        <Button bg="blue" text="white">
+          Blue Button
+        </Button>
         {/* <Users users={users} /> */}
         {/* <User user={user1} />
           <User user={user2} /> */}
