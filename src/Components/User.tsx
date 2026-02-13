@@ -1,5 +1,6 @@
 type UserProps = {
   user: {
+    id: number;
     name: string;
     age: number;
     isActive: boolean;
